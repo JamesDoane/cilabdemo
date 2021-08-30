@@ -9,6 +9,4 @@ jobs:
       name: node/default
       tag: '10.4'
     steps:
-      - node/test:
-          steps:
-            - run: npm run test
+      - node/test
