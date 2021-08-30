@@ -9,8 +9,6 @@ jobs:
       name: node/default
       tag: '10.4'
     steps:
-      - checkout
-      - node/with-cache:
+      - node/test:
           steps:
-            - run: npm install
-      - run: npm run test
+            - run: npm run test
